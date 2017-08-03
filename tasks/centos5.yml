@@ -1,0 +1,7 @@
+---
+# tasks file for SeiichiDomyo.bento
+
+- hosts: centos5
+
+  roles:
+    - common

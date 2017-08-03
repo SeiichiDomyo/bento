@@ -1,0 +1,17 @@
+- name: install yumdownloader package
+  yum:
+    name: yum-utils
+    state: present
+  become: true
+
+- name: install the Development tools packages
+  yum:
+    name: "@development"
+    state: present
+  become: true
+
+- name: install rpmbuild
+  yum:
+    name: rpmdevtools
+    state: present
+  become: true
